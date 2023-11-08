@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="icon" href="img/new-york2.jpg" />
+  </head>
+  <body>
+    <!-- navbal start -->
+    <main class="navbar">
+      <h1 class="logo">TOLULOPE</h1>
+
+      <ul class="nav-link">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="btn"><a href="">Sign In</a></li>
+      </ul>
+      <!-- img"card4""-->
+      <img src="img/car4.jpg" alt="" class="menu-btn">
+    </main>
+    <!-- navbal end here -->
+
+    <!-- header start -->
+    <header>
+      <div class="header-content">
+        <div data-aos="slide-right" data-aos-duration="1200">
+        <h2>Eplore the colorful world</h2>
+        <div class="line"></div>
+        <h1>The wonderful gold</h1>
+        </div>
+        <div data-aos="slide-left" data-aos-duration="1200"><a href="" class="btn">Learn More</a></div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- event -->
+    <section class="event">
+      <div class="title" data-aos="slide-down" data-aos-duration="800">
+        <h1 >Upcoming Event</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col" data-aos="slide-right" data-aos-duration="1800">
+          <img src="img/OIP3.jpg" alt="">
+          <h4>Everest Camp Trek</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil.</p>
+          <div data-aos="slide-left" data-aos-duration="1200" class="btn-btn">
+            <a href="" class="btn" >Learn More</a>
+          </div>
+        </div>
+        <div class="col" data-aos="slide-up" data-aos-duration="1800">
+          <img src="img/new-york2.jpg" alt="" width="230" height="180">
+          <h4>Everest Camp Trek</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nihil.</p>
+          <div data-aos="slide-left" data-aos-duration="1200"><a href="" class="btn">Learn More</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- event stop -->
+
+    <!-- article -->
+    <article class="explore">
+      <div class="explore-content">
+        <h1>Explore the world</h1>
+        <div class="line"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur, optio assumenda voluptas consequatur amet?</p>
+        <a href="" class="btn">Learn More</a>
+      </div>
+    </article>
+
+    <!-- div  tour-->
+    <div class="tour">
+      <div class="row">
+        <div class="col content-col">
+          <div data-aos="slide-right" data-aos-duration="1200">
+          <h1>Upcoming tours & destination</h1>
+          <div class="line"></div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus pariatur nesciunt suscipit ea qui, sequi repudiandae ex maxime perferendis.</p>
+          <div data-aos="slide-left" data-aos-duration="1200"><a href="" class="btn">Learn More</a></div>
+          </div>
+
+          <div class="col image-col">
+            <div class="image-gallery" data-aos="zoom-out-left" data-aos-duration="1200">
+              <img src="img/OIP3.jpg" alt="">
+              <img src="img/OIP3.jpg" alt="">
+              <img src="img/OIP3.jpg" alt="">
+              <img src="img/OIP3.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- div tour end -->
+
+    <!-- footer -->
+    <footer>
+      <p>No 9, Unity Close Ogudu Road Ojota Lagos. | phone: +2347025213244 | Email: tolulope0203@outlook.com</p>
+
+      <p>Copywrite &copy; 2023 tours</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script> AOS.init(); </script>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-link');
+        menuBtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+  </body>
+</html>

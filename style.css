@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+ul li {
+  list-style: none;
+}
+.active a {
+  color: #fc036b;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav-link{
+  display: flex;
+  align-items: center;
+}
+.nav-link li{
+  margin: 0 30px;
+}
+/* navbal end */
+
+/* header start */
+header{
+  background-image:url(img/new-york2.jpg) ;
+  width: 98.7vw;
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-content{
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h2{
+  font-size: 1.7rem;
+}
+.line{
+  width: 150px;
+  height: 4px;
+  background-color: #fc036b;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.header-content h1{
+  font-size: 7vmin;
+  margin: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.btn{
+  padding: 10px 15px;
+  background-color: #fc036b;
+  color: whitesmoke;
+  border-radius: 30px;
+}
+
+.btn-btn a{
+  margin-top: 65px;
+}
+
+
+.btn:hover{
+  background-color: whitesmoke;
+  color: #fc036b;
+  box-shadow: 2px 2px 5px #00000056;
+}
+.btn a:hover{
+  color: #fc036b;
+}
+
+/* header end */
+
+/* event start */
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+.title{
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.row .col{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.event .row{
+  margin-top: 50px;
+}
+h4{
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+p{
+  color: #7c7c7c;
+  padding: 0px 40px;
+}
+.event .btn{
+  margin-top: 15px;
+}
+/* event stop */
+
+/* article */
+.explore{
+  background-image: url(img/cat.jpg);
+  width: 100%;
+  height:80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.explore-content{
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-content h1{
+  font-size: 7vhm;
+  margin: 40px;
+  text-transform: upper case;
+}
+.explore-content .line{
+  margin-bottom: 40px;
+}
+.explore-content p{
+  color: white;
+}
+/* article end */
+
+/* div tour start*/
+.content-col{
+  width: 40%;
+  margin-left: 5rem;
+}
+.image-col{
+  width: 60%;
+}
+.image-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap:15px; */
+  margin-top: 50px;
+}
+
+.image-gallery img{
+  /* width: 250px; */
+  margin: 10px;
+}
+.content-col h1{
+  text-transform: uppercase;
+  font-size:7.8vmin;
+  color: #484872;
+}
+/* tour end */
+
+/* footer start */
+footer{
+  width: 100%;
+  height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: #484872;
+  text-align: center;
+}
+footer p{
+  color: whitesmoke;
+  margin: 20px auto;
+}
+img{
+  transition: transform .3s ease;
+}
+img:hover{
+  transform: scale(1.1);
+}
+.menu-btn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  display: none;
+}
+@media only screen and (max-width : 970px){
+  .logo{
+    color: red;
+  }
+  .menu-btn{
+    display: block;
+  }
+  .nav-link{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #484872;
+    margin-top: -1000px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu{
+    margin-top: 0; 
+  }
+  .nav-link li{
+    margin: 30px auto;
+  }
+  /* event */
+  .row{
+    flex-direction: column;
+  }
+  .row .col{
+      margin: 20px auto;
+    }
+
+  .col img{
+      max-width: 90%;
+    }
+
+
+    /* explore  */
+  .explore-content{
+      width: 100%;
+    }
+
+  .tour .col{
+      width: 100%;
+    }
+    .tour h1{
+      margin-left: 2.8rem;
+    }
+
+  .image-gallery{
+      justify-content: center;
+      align-items: center;
+    }
+
+  .image-gallery img{
+        width: 90%;
+    }
+
+  footer{
+      padding: 10px;
+      color: rgb(243, 243, 245);
+      height: 20vh;
+    }
+
+  footer p{
+      color: rgb(246, 246, 247);
+    }
+}
